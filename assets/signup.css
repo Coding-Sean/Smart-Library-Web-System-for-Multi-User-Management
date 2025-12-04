@@ -1,0 +1,115 @@
+/* Background split design */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Left and right background halves */
+.split {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+}
+
+.left {
+    left: 0;
+    background-color: #9c9c9c;
+}
+
+.right {
+    right: 0;
+    background-color: #2f3e50;
+}
+
+/* White signup box */
+.signup-container {
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    padding: 40px 50px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    width: 350px;
+}
+
+/* Form elements */
+.signup-form h2 {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.signup-form p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #000;
+    outline: none;
+    padding: 8px 4px;
+    background: transparent;
+    font-size: 14px;
+}
+
+/* Role selection */
+.role-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.role-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.role-buttons input[type="radio"] {
+    display: none;
+}
+
+.role-buttons label {
+    background-color: #5b5b5b;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 15px;
+    cursor: pointer;
+    text-transform: lowercase;
+    transition: background 0.3s;
+    font-size: 0.9rem;
+}
+
+.role-buttons input[type="radio"]:checked + label {
+    background-color: #2f3e50;
+}
+
+/* Create button */
+.btn-create {
+    width: 100%;
+    padding: 8px;
+    background-color: #5b5b5b;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.btn-create:hover {
+    background-color: #2f3e50;
+}
