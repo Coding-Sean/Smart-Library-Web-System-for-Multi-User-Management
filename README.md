@@ -200,10 +200,10 @@ MyLibrary/
 │   ├── librarian.css           # Librarian dashboard styles
 │   ├── staff.css               # Staff dashboard styles
 │   └── stud_teacher.css        # Student/Teacher dashboard styles
-│   └── js/                            # Javascripts 
-│       ├── librarian-dashboard.js     #Librarian Scripts
-│      ├── staff-dashboard.js         #Staff Scripts
-│       └── student-teacher-dashboard.js      #student-teacher scripts
+│   └── js/                                    # Javascripts 
+│       ├── librarian-dashboard.js             # Librarian Scripts
+│       ├── staff-dashboard.js                 # Staff Scripts
+│       └── student-teacher-dashboard.js       # student-teacher scripts
 │
 ├── config/                      # Configuration Files
 │   └── database.php            # Database connection (PDO)
@@ -470,7 +470,7 @@ This project is licensed under the MIT License.
 **Course, Year & Section:** BSIS 3-B
 
 **Developer:** Coding-Sean  
-**Repository:** [https://github.com/Coding-Sean/MyLibrary](https://github.com/Coding-Sean/MyLibrary)  
+**Repository:** [https://github.com/Coding-Sean/MyLibrary](https://github.com/Coding-Sean/Smart-Library-Web-System-for-Multi-User-Management)  
 **Email:** liberajansean34@gmail.com
 
 ---
