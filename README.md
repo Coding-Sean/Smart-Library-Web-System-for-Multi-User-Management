@@ -200,6 +200,10 @@ MyLibrary/
 │   ├── librarian.css           # Librarian dashboard styles
 │   ├── staff.css               # Staff dashboard styles
 │   └── stud_teacher.css        # Student/Teacher dashboard styles
+│   └── js/                            # Javascripts 
+│       ├── librarian-dashboard.js     #Librarian Scripts
+│      ├── staff-dashboard.js         #Staff Scripts
+│       └── student-teacher-dashboard.js      #student-teacher scripts
 │
 ├── config/                      # Configuration Files
 │   └── database.php            # Database connection (PDO)
