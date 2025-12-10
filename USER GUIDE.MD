@@ -1,1 +1,2161 @@
+# 📚 MyLibrary System - Complete User Guide
 
+**Smart Library Web System for Multi-User Management**  
+Version 1.0.0
+
+---
+
+## 📑 Table of Contents
+
+1. [Introduction](#introduction)
+2. [Getting Started](#getting-started)
+3. [User Guide for Students](#user-guide-for-students)
+4. [User Guide for Teachers](#user-guide-for-teachers)
+5. [User Guide for Librarians](#user-guide-for-librarians)
+6. [User Guide for Staff](#user-guide-for-staff)
+7. [Frequently Asked Questions (FAQ)](#frequently-asked-questions-faq)
+8. [Support & Contact](#support--contact)
+
+---
+
+## Introduction
+
+### What is MyLibrary?
+
+MyLibrary is a comprehensive web-based library management system designed to help educational institutions manage their library operations efficiently. The system supports four different user roles: Students, Teachers, Librarians, and Staff members.
+
+### Who Can Use This System?
+
+- **Students** - Borrow books, make reservations, and check clearance status
+- **Teachers** - Borrow books without limits, make reservations
+- **Librarians** - Manage book inventory and catalog
+- **Staff** - Process transactions, manage borrowing/returns, handle penalties
+
+### System Access
+
+You can access the system by opening your web browser and navigating to: 
+```
+http://localhost/MyLibrary
+```
+Or the URL provided by your institution's IT department.
+
+---
+
+## Getting Started
+
+### 1. Creating Your Account
+
+#### Step-by-Step Registration: 
+
+1. **Navigate to the Sign-Up Page**
+   - Open your web browser
+   - Go to the MyLibrary website
+   - Click the **"Sign Up"** button on the login page
+
+2. **Fill in Your Information**
+   - **Full Name**: Enter your complete name
+   - **Email Address**:  Use your institutional email
+   - **Password**:  Create a secure password (minimum 6 characters)
+   - **Confirm Password**: Re-enter your password
+   - **Role**: Select your role (Student, Teacher, Librarian, or Staff)
+
+3. **Submit Registration**
+   - Click the **"Sign Up"** button
+   - Wait for confirmation message
+   - You'll be redirected to the login page
+
+#### Important Notes:
+- Use a valid email address you can access
+- Remember your password - there's no password recovery yet
+- Select the correct role (you cannot change this later)
+
+### 2. Logging Into the System
+
+1. **Go to Login Page**
+   - Navigate to the MyLibrary homepage
+   - You'll see the login screen
+
+2. **Enter Your Credentials**
+   - **Email**: Enter your registered email address
+   - **Password**:  Enter your password
+
+3. **Access Your Dashboard**
+   - Click the **"Login"** button
+   - You'll be redirected to your role-specific dashboard
+
+### 3. Logging Out
+
+To safely log out of the system:
+1. Look for the **"Logout"** button (usually in the top-right corner)
+2. Click **"Logout"**
+3. You'll be redirected to the login page
+4. Your session will be securely terminated
+
+---
+
+## User Guide for Students
+
+### Student Overview
+
+**Borrowing Limit**: 3 books per semester  
+**Borrowing Period**: 14 days  
+**Late Fee**: ₱10 per day overdue
+
+### Dashboard Features
+
+When you log in as a student, you'll see: 
+- **Book Catalog** - Browse available books
+- **My Borrowed Books** - View currently borrowed books
+- **Reservations** - Books you've reserved
+- **Penalties** - Any late fees or fines
+- **Clearance Status** - Your semester clearance status
+
+---
+
+### How to Browse and Search for Books
+
+#### Browsing the Catalog: 
+
+1. **View All Books**
+   - After logging in, you'll see the book catalog
+   - Books are displayed as cards with: 
+     - Book title
+     - Author name
+     - Category
+     - Available copies
+     - "Reserve" button
+
+2. **Search for Specific Books**
+   - Locate the **search bar** at the top of the catalog
+   - Type any of the following: 
+     - Book title (e.g., "Harry Potter")
+     - Author name (e.g., "J.K. Rowling")
+     - ISBN number
+     - Category (e.g., "Fiction")
+   - Results appear instantly as you type
+
+#### Understanding Book Status:
+
+- **Available** - Green indicator, books can be reserved
+- **Borrowed** - Red indicator, all copies are currently out
+- **Number of Copies** - Shows how many copies exist and how many are available
+
+---
+
+### How to Reserve a Book
+
+**Note**: You must reserve books online; staff will then process your borrowing. 
+
+#### Reservation Steps:
+
+1. **Find Your Book**
+   - Browse or search for the book you want
+   - Check that copies are available
+
+2. **Click Reserve**
+   - Click the **"Reserve"** button on the book card
+   - A confirmation dialog will appear
+
+3. **Confirm Reservation**
+   - Review the book details
+   - Click **"Confirm"** to submit your reservation
+
+4. **Wait for Approval**
+   - Your reservation status will show as **"Pending"**
+   - Staff will review and approve your reservation
+   - Once approved, visit the library to collect the book
+
+#### Reservation Rules: 
+
+- ✅ You can only reserve books that are available
+- ✅ Maximum 3 books at a time (total borrowed + reserved)
+- ❌ Cannot reserve if you have unpaid penalties
+- ❌ Cannot reserve if you've reached your borrowing limit
+
+---
+
+### Viewing Your Borrowed Books
+
+1. **Access Borrowed Books Section**
+   - Look for **"My Borrowed Books"** tab or section
+   - This shows all books you currently have
+
+2. **Information Displayed**
+   - **Book Title** and Author
+   - **Borrow Date** - When you checked out the book
+   - **Due Date** - When the book must be returned (14 days from borrow date)
+   - **Days Remaining** - How many days until due date
+   - **Status** - "On Time" or "Overdue"
+
+3. **Understanding Due Dates**
+   - All books must be returned within **14 days**
+   - **Green** date = Still on time
+   - **Red** date = Overdue (penalties apply)
+
+---
+
+### Managing Penalties
+
+#### Viewing Your Penalties:
+
+1. **Access Penalties Section**
+   - Click on **"Penalties"** or **"Fines"** tab
+   - View all penalties associated with your account
+
+2. **Penalty Information**
+   - **Type**:  Late Return or Lost Book
+   - **Amount**: Total amount owed
+   - **Issue Date**: When the penalty was issued
+   - **Status**:  Unpaid, Paid, or Waived
+   - **Related Book**: Which book caused the penalty
+
+#### Types of Penalties:
+
+| Penalty Type | Calculation | Payment |
+|-------------|-------------|---------|
+| **Late Return** | ₱10 per day overdue | Pay at library counter |
+| **Lost Book** | Full book price | Pay at library counter |
+
+#### How to Pay Penalties:
+
+1. Note down your penalty amount and details
+2. Visit the library staff counter
+3. Inform staff you want to pay penalties
+4. Make payment (cash or as instructed)
+5. Staff will mark your penalty as "Paid" in the system
+
+#### Important: 
+- ❌ You **cannot borrow or reserve** books with unpaid penalties
+- ❌ You **cannot get clearance** with unpaid penalties
+- ✅ Staff can **waive** penalties in special circumstances
+
+---
+
+### Semester Clearance
+
+#### What is Clearance?
+
+Clearance is a verification process at the end of each semester to ensure you have: 
+- Returned all borrowed books
+- Paid all penalties and fines
+- Met all borrowing requirements
+
+#### How to Check Clearance Status:
+
+1. **Access Clearance Section**
+   - Look for **"Clearance"** or **"Semester Clearance"** tab
+
+2. **View Your Status**
+   - **Cleared** (Green) - You're good to go! 
+   - **Not Cleared** (Red) - You have pending requirements
+
+3. **Requirements for Clearance**
+   - ✅ All borrowed books returned
+   - ✅ All penalties paid in full
+   - ✅ No outstanding reservations
+
+#### Getting Cleared:
+
+1. Return all borrowed books to the library
+2. Pay any outstanding penalties
+3. Visit library staff to process your clearance
+4. Staff will update your clearance status
+5. You'll receive clearance confirmation
+
+---
+
+## User Guide for Teachers
+
+### Teacher Overview
+
+**Borrowing Limit**:  Unlimited books  
+**Borrowing Period**: 14 days  
+**Late Fee**:  ₱10 per day overdue  
+**Semester Requirement**: Must return all books at semester end
+
+### Dashboard Features
+
+As a teacher, your dashboard includes:
+- **Book Catalog** - Full library inventory
+- **My Borrowed Books** - All your borrowed materials
+- **Reservations** - Books you've reserved
+- **Penalties** - Any late fees
+- **Clearance Status** - End-of-semester clearance
+
+---
+
+### How to Reserve Books (Teachers)
+
+The process is identical to students, with these differences:
+
+#### Advantages: 
+- ✅ **No borrowing limit** - Reserve as many books as needed
+- ✅ **Priority processing** - Faster approval for academic needs
+- ✅ **Extended privileges** - Longer borrowing for research
+
+#### Steps:
+
+1. **Search for Books**
+   - Use the search bar to find books by title, author, or subject
+   - Browse categories relevant to your teaching
+
+2. **Make Reservations**
+   - Click **"Reserve"** on available books
+   - Add notes if needed for special requests
+
+3. **Visit Library**
+   - Once approved, collect books from library staff
+   - Staff may accommodate bulk borrowing for classroom use
+
+---
+
+### Managing Your Borrowed Books
+
+#### Viewing Borrowed Materials:
+
+1. **Access Your Books**
+   - Navigate to **"My Borrowed Books"**
+   - See complete list with due dates
+
+2. **Track Due Dates**
+   - **Due Date** is 14 days from borrow date
+   - Renew if needed (contact staff)
+   - Return on time to avoid penalties
+
+#### Tips for Teachers: 
+- 📌 Set calendar reminders for due dates
+- 📌 Contact staff for extensions if needed for curriculum
+- 📌 Return books promptly for other faculty to access
+
+---
+
+### Penalties and Payments
+
+#### Late Return Penalties:
+- **₱10 per day** for each overdue book
+- Calculated automatically upon return
+- Must be paid before semester clearance
+
+#### How to Manage: 
+1. Check penalties in **"Penalties"** section
+2. Pay at library counter
+3. Request waiver from staff if special circumstances apply
+
+---
+
+### End-of-Semester Clearance
+
+#### Teacher Clearance Requirements: 
+
+Teachers **must** obtain clearance before the semester ends:
+
+1. **Return All Books**
+   - No exceptions - all borrowed materials must be returned
+   - This includes books borrowed for classroom use
+
+2. **Pay All Penalties**
+   - Clear all late fees
+   - Settle any lost book charges
+
+3. **Process Clearance**
+   - Visit library staff
+   - Staff will verify your account
+   - Receive clearance confirmation
+
+**Important**: Failure to get clearance may affect academic records. 
+
+---
+
+## User Guide for Librarians
+
+### Librarian Overview
+
+**Primary Responsibility**: Book Inventory Management  
+**Main Functions**: Add, Edit, Update, and Archive books in the system
+
+### Dashboard Overview
+
+Your librarian dashboard provides:
+- **Book Catalog** - Full inventory view
+- **Add Book** - Add new books to inventory
+- **Edit Books** - Update book information
+- **Search & Filter** - Find specific books quickly
+- **Archive** - Soft delete books no longer available
+
+---
+
+### Managing the Book Catalog
+
+#### Viewing All Books:
+
+1. **Access Catalog**
+   - Your dashboard displays all books in the system
+   - Books shown as cards with full details
+
+2. **Book Information Displayed**
+   - Title
+   - Author
+   - ISBN
+   - Category
+   - Number of Copies
+   - Price
+   - Status (Available/Borrowed/Archived)
+
+3. **Search and Filter**
+   - Use search bar to find specific books
+   - Search by:  Title, Author, ISBN, or Category
+   - Results update in real-time
+
+---
+
+### Adding New Books
+
+#### Step-by-Step Process:
+
+1. **Click "Add Book" Button**
+   - Located prominently on your dashboard
+   - Opens the Add Book form
+
+2. **Fill in Book Details**
+
+   **Required Fields:**
+   - **Book Title** - Full title of the book
+   - **Author** - Author's full name
+   - **ISBN** - International Standard Book Number
+   - **Category** - Select from dropdown (Fiction, Non-Fiction, Reference, etc.)
+   - **Number of Copies** - How many copies to add
+   - **Price** - Book price in Philippine Pesos (₱)
+
+3. **Review Information**
+   - Double-check all entered data
+   - Ensure ISBN is correct
+   - Verify copy count
+
+4. **Submit**
+   - Click **"Add Book"** button
+   - Wait for confirmation message
+   - Book will appear in catalog immediately
+
+#### Tips for Adding Books: 
+- 📖 Use the exact ISBN from the book
+- 📖 Be consistent with author name formatting
+- 📖 Choose the most appropriate category
+- 📖 Add multiple copies in one entry if they're identical
+
+---
+
+### Editing Existing Books
+
+#### When to Edit: 
+- Update incorrect information
+- Change number of available copies
+- Update pricing
+- Correct title or author spelling
+
+#### How to Edit: 
+
+1. **Find the Book**
+   - Use search to locate the book
+   - Or browse through the catalog
+
+2. **Click "Edit" Button**
+   - Found on each book card
+   - Opens Edit Book form with current data pre-filled
+
+3. **Modify Information**
+   - Change any field that needs updating
+   - **Editable fields:**
+     - Title
+     - Author
+     - ISBN
+     - Category
+     - Number of Copies
+     - Price
+
+4. **Save Changes**
+   - Click **"Update Book"** or **"Save"**
+   - Confirm the update
+   - Changes take effect immediately
+
+#### Important Notes:
+- ⚠️ Be careful when changing ISBNs
+- ⚠️ Changing copy count affects availability
+- ⚠️ Price changes don't affect existing penalties
+
+---
+
+### Archiving Books
+
+#### What is Archiving?
+
+Archiving is a "soft delete" that removes books from active circulation without permanently deleting them from the database.
+
+#### When to Archive:
+- Books are damaged beyond use
+- Books are lost and won't be replaced
+- Outdated editions being phased out
+- Books no longer relevant to curriculum
+
+#### How to Archive:
+
+1. **Locate the Book**
+   - Search for the book to archive
+
+2. **Click "Archive" Button**
+   - Found on the book card or edit form
+   - Confirmation dialog appears
+
+3. **Confirm Archival**
+   - Review the book details
+   - Click **"Confirm Archive"**
+
+4. **Result**
+   - Book removed from active catalog
+   - Book no longer available for borrowing or reservation
+   - Data preserved in database for records
+
+#### Viewing Archived Books: 
+- Look for "View Archived" filter or tab
+- Archived books can be restored if needed (contact system admin)
+
+---
+
+### Search and Filter Features
+
+#### Search Functionality:
+
+1. **Basic Search**
+   - Enter keywords in search bar
+   - Searches across:  Title, Author, ISBN, Category
+   - Results appear instantly
+
+2. **Advanced Filtering**
+   - Filter by category
+   - Filter by availability status
+   - Sort by title, author, or date added
+
+#### Tips for Efficient Management:
+- 🔍 Use ISBN search for exact matches
+- 🔍 Regularly review inventory for accuracy
+- 🔍 Keep categories consistent
+- 🔍 Update copy counts when books are damaged
+
+---
+
+## User Guide for Staff
+
+### Staff Overview
+
+**Primary Responsibility**: Transaction Management  
+**Main Functions**:
+- Process book borrowing
+- Process book returns
+- Manage penalties
+- Approve reservations
+- Process clearances
+
+### Dashboard Overview
+
+Your staff dashboard includes:
+- **Borrower Management** - Search and manage borrowers
+- **Borrow Books** - Process new borrowing transactions
+- **Return Books** - Process returns and calculate penalties
+- **Reservations** - Approve/reject pending reservations
+- **Penalties** - View, add, and manage penalties
+- **Clearance** - Process semester clearances
+
+---
+
+### Processing Book Borrowing
+
+#### Step-by-Step Borrowing Process:
+
+1. **Search for Borrower**
+   - Student or teacher approaches with ID
+   - Use search bar to find borrower by name or email
+   - Click on the borrower's profile
+
+2. **Check Eligibility**
+   - System automatically checks: 
+     - ✅ Student hasn't exceeded 3-book limit
+     - ✅ No unpaid penalties
+     - ✅ Valid account status
+
+3. **Select Books to Borrow**
+   - Click **"Borrow Book"** button
+   - Search for the book by title, author, or ISBN
+   - Select the book from results
+
+4. **Confirm Transaction**
+   - Review borrower details
+   - Review book details
+   - **Borrow Date**:  Auto-filled with today's date
+   - **Due Date**: Auto-calculated (14 days from today)
+   - Click **"Confirm Borrow"**
+
+5. **Complete Process**
+   - System records the transaction
+   - Book copy count decreases
+   - Borrower's active loans increase
+   - Print/show confirmation to borrower
+
+#### Important Checks:
+- ⚠️ Students:  Maximum 3 books
+- ⚠️ Teachers:  Unlimited
+- ⚠️ Must have no unpaid penalties
+- ⚠️ Book must have available copies
+
+---
+
+### Processing Book Returns
+
+#### Return Process:
+
+1. **Find Borrower**
+   - Borrower returns with book(s)
+   - Search for borrower in system
+   - View their borrowed books
+
+2. **Select Book to Return**
+   - Click **"Return"** button next to the book
+   - Or select from list of borrowed books
+
+3. **Automatic Penalty Calculation**
+   - System compares today's date with due date
+   - **If on time**: No penalty, smooth return
+   - **If overdue**: System calculates penalty automatically
+     ```
+     Days Late = Today - Due Date
+     Penalty = Days Late × ₱10
+     ```
+
+4. **Process Return**
+   - Review penalty amount (if any)
+   - Click **"Confirm Return"**
+   - Book status changes to "Returned"
+   - Copy count increases
+
+5. **Handle Penalty**
+   - If penalty exists:
+     - Inform borrower of amount
+     - Collect payment
+     - Mark penalty as "Paid" (see Penalty Management section)
+
+---
+
+### Managing Reservations
+
+#### Viewing Pending Reservations:
+
+1. **Access Reservations Section**
+   - Click **"Reservations"** tab
+   - See list of all pending reservations
+
+2. **Reservation Details**
+   - Student/Teacher name
+   - Book title
+   - Reservation date
+   - Status (Pending/Approved/Rejected)
+
+#### Approving Reservations: 
+
+1. **Review Reservation**
+   - Check if book is available
+   - Verify borrower eligibility
+
+2. **Approve**
+   - Click **"Approve"** button
+   - Reservation status changes to "Approved"
+   - Book is marked as reserved for that borrower
+
+3. **Process Borrowing**
+   - When borrower arrives to collect
+   - Follow normal borrowing process
+   - Reference the approved reservation
+
+#### Rejecting Reservations:
+
+1. **Select Reservation**
+2. **Click "Reject"**
+3. **Provide Reason** (optional but recommended)
+4. **Confirm Rejection**
+   - Borrower should be notified
+   - Reservation status updated
+
+#### Common Rejection Reasons:
+- Book no longer available
+- Borrower has unpaid penalties
+- Borrower exceeded borrowing limit
+- Book under maintenance/repair
+
+---
+
+### Penalty Management
+
+#### Viewing All Penalties:
+
+1. **Access Penalties Section**
+   - View all penalties in the system
+   - Filter by:  Paid, Unpaid, Waived
+   - Search by borrower name
+
+#### Adding Manual Penalties:
+
+Sometimes you need to add penalties manually (e.g., lost books):
+
+1. **Find Borrower**
+   - Search for the borrower
+
+2. **Click "Add Penalty"**
+   - Opens penalty form
+
+3. **Enter Penalty Details**
+   - **Type**: Late Return or Lost Book
+   - **Amount**: 
+     - Late:  ₱10 × days late
+     - Lost: Full book price
+   - **Reason**: Brief description
+   - **Related Borrow Transaction**: Select the transaction
+
+4. **Submit**
+   - Penalty added to borrower's account
+   - Borrower cannot borrow until paid
+
+#### Marking Penalties as Paid:
+
+1. **Locate Penalty**
+   - Find the specific penalty
+
+2. **Collect Payment**
+   - Accept payment from borrower
+   - Count cash carefully
+
+3. **Update Status**
+   - Click **"Mark as Paid"**
+   - Enter payment date
+   - Add receipt number if applicable
+
+4. **Confirm**
+   - Status changes to "Paid"
+   - Borrower can now borrow again
+
+#### Waiving Penalties:
+
+In special circumstances, staff can waive penalties:
+
+1. **Select Penalty**
+2. **Click "Waive Penalty"**
+3. **Enter Reason** (required)
+   - Example reasons:
+     - Book found after payment
+     - System error
+     - Administrative decision
+     - Special circumstances approved by supervisor
+4. **Confirm Waiver**
+   - Status changes to "Waived"
+   - No payment required
+
+---
+
+### Processing Clearances
+
+#### What is Clearance Processing?
+
+At the end of each semester, students and teachers must obtain clearance from the library before completing their semester requirements.
+
+#### Clearance Requirements:
+
+**For Students:**
+- All borrowed books returned
+- All penalties paid
+- Maximum 3 books per semester rule followed
+
+**For Teachers:**
+- All borrowed books returned
+- All penalties paid
+
+#### How to Process Clearance:
+
+1. **Student/Teacher Requests Clearance**
+   - They approach library counter
+   - Request clearance processing
+
+2. **Access Clearance Section**
+   - Click **"Clearance"** or **"Process Clearance"**
+   - Search for the person's name
+
+3. **Verify Requirements**
+   - System shows: 
+     - ✅ or ❌ All books returned
+     - ✅ or ❌ All penalties paid
+     - Borrowing history
+
+4. **Grant or Deny Clearance**
+
+   **If All Requirements Met:**
+   - Click **"Grant Clearance"**
+   - Enter semester (e.g., "1st Semester 2025-2026")
+   - Click **"Confirm"**
+   - Clearance status updated to "Cleared"
+   - Print or provide confirmation
+
+   **If Requirements Not Met:**
+   - Inform them of pending requirements
+   - Show what needs to be completed
+   - Guide them to return books or pay penalties
+   - Process clearance once completed
+
+5. **Record Keeping**
+   - All clearances are recorded with date and semester
+   - Viewable in clearance history
+
+---
+
+### Borrower Search and Management
+
+#### Finding Borrowers:
+
+1. **Use Search Bar**
+   - Enter name, email, or ID
+   - Results appear instantly
+
+2. **View Borrower Profile**
+   - Click on borrower name
+   - See complete information: 
+     - Name and email
+     - Role (Student/Teacher)
+     - Currently borrowed books
+     - Borrowing history
+     - Penalties
+     - Clearance status
+
+#### Managing Borrower Accounts: 
+
+As staff, you can: 
+- View complete borrowing history
+- See all transactions
+- Check penalty status
+- Verify clearance status
+- Process all transactions for that borrower
+
+---
+
+### Tips for Efficient Staff Operations
+
+#### Best Practices:
+
+1. **Daily Opening Procedures**
+   - Check for overdue books
+   - Review pending reservations
+   - Note any unpaid penalties
+
+2. **During Transactions**
+   - Always verify borrower identity
+   - Double-check book condition
+   - Inform borrowers of due dates
+   - Explain penalty policies clearly
+
+3. **End of Day**
+   - Review transactions processed
+   - Ensure all payments recorded
+   - Clear pending reservations
+
+4. **Communication**
+   - Be polite and helpful
+   - Explain system processes clearly
+   - Guide users through their first transactions
+   - Provide due date reminders
+
+---
+
+## Frequently Asked Questions (FAQ)
+
+### General Questions
+
+**Q: I forgot my password. How do I reset it?**  
+A: Currently, the system doesn't have automated password reset.  Please contact the library staff or system administrator to reset your password manually.
+
+**Q: Can I change my role after registration?**  
+A: No, roles are permanent after registration. If you registered with the wrong role, contact the system administrator.
+
+**Q: Why can't I access the system?**  
+A:  Ensure you're using the correct email and password. Check that Apache and MySQL are running if you're accessing locally.  Clear your browser cache and try again.
+
+---
+
+### Student Questions
+
+**Q: Why can't I reserve more books? **  
+A: Students are limited to 3 books total (borrowed + reserved). Return books or wait for reservations to be processed to free up your limit.
+
+**Q: How long does it take for my reservation to be approved?**  
+A: Typically, staff process reservations within 24 hours. Check your reservation status in your dashboard.
+
+**Q: What happens if I return a book late?**  
+A: You'll be charged ₱10 per day for each day the book is overdue. This penalty must be paid before you can borrow again.
+
+**Q: I lost my borrowed book. What should I do?**  
+A:  Report it to library staff immediately. You'll be charged the full price of the book as a replacement fee.
+
+**Q: Can I renew my borrowed books?**  
+A: Contact library staff to request renewal. They will extend your due date if the book is not reserved by others.
+
+**Q: Why is my clearance status "Not Cleared"?**  
+A: Check if you have unreturned books or unpaid penalties. Clear these requirements, then request clearance from staff.
+
+---
+
+### Teacher Questions
+
+**Q: Is there a limit to how many books I can borrow? **  
+A: No, teachers have unlimited borrowing privileges. 
+
+**Q: Can I borrow books for my entire class?**  
+A: Yes, but each book must be registered under your name.  Discuss bulk borrowing with library staff.
+
+**Q: Do I need clearance every semester?**  
+A: Yes, all faculty must obtain library clearance at the end of each semester before completing semester requirements.
+
+**Q: What if I need a book for longer than 14 days?**  
+A:  Contact library staff to request an extension or renewal. 
+
+---
+
+### Librarian Questions
+
+**Q: Can I delete a book permanently?**  
+A: No, the system uses "archiving" (soft delete) to preserve records.  Archived books can be restored by administrators if needed.
+
+**Q: What if I made a mistake when adding a book?**  
+A: Use the "Edit" function to correct any information. All fields can be updated after initial entry.
+
+**Q: How do I add multiple copies of the same book?**  
+A:  In the "Number of Copies" field, enter the total number of identical copies.  Don't create separate entries for each copy.
+
+**Q: Can I see which books are most borrowed?**  
+A: Currently, this requires database access. Contact the system administrator for borrowing statistics.
+
+---
+
+### Staff Questions
+
+**Q: What if a student wants to borrow but has unpaid penalties?**  
+A:  The system will prevent borrowing.  The student must pay penalties first before borrowing.
+
+**Q:  How do I handle partial penalty payments?**  
+A: Currently, the system tracks full payment only. For partial payments, make a note and collect the balance before marking as paid.
+
+**Q: Can I approve a reservation for a book that's currently borrowed?**  
+A: Yes, you can approve it.  The system will mark it for when the book becomes available.
+
+**Q: What if the penalty calculation seems wrong?**  
+A: The system calculates ₱10 per day.  Verify the due date and return date.  If there's a system error, contact the administrator.  You can also waive incorrect penalties.
+
+**Q: How do I print clearance certificates?**  
+A: Currently, use your browser's print function (Ctrl+P) when viewing the clearance confirmation screen.
+
+---
+
+## Support & Contact
+
+### Getting Help
+
+If you encounter issues or have questions not covered in this guide:
+
+#### Technical Support
+- **System Administrator**: Contact your institution's IT department
+- **Developer**: Jansean Libera
+- **Email**: liberajansean34@gmail.com
+- **GitHub**: [Coding-Sean/Smart-Library-Web-System-for-Multi-User-Management](https://github.com/Coding-Sean/Smart-Library-Web-System-for-Multi-User-Management)
+
+#### Library Staff
+- Visit the library counter during operating hours
+- Library staff can assist with:
+  - Account issues
+  - Transaction problems
+  - Penalty questions
+  - Clearance processing
+
+### Reporting Bugs
+
+If you find a bug or error in the system:
+
+1. **Document the Issue**
+   - What were you trying to do?
+   - What happened instead?
+   - Any error messages shown?
+
+2. **Report via GitHub**
+   - Go to the repository's Issues page
+   - Click "New Issue"
+   - Describe the problem clearly
+   - Include screenshots if possible
+
+3. **Or Contact Developer**
+   - Email: liberajansean34@gmail.com
+   - Include detailed description and screenshots
+
+---
+
+## System Tips and Tricks
+
+### For All Users
+
+1. **Bookmark the System**
+   - Add MyLibrary to your browser bookmarks for quick access
+
+2. **Keep Track of Due Dates**
+   - Set calendar reminders 2-3 days before books are due
+   - Check your dashboard regularly
+
+3. **Use Search Effectively**
+   - Search by ISBN for exact matches
+   - Use partial titles if you don't know the full name
+   - Try author's last name for better results
+
+4. **Browser Compatibility**
+   - Works best on Chrome, Firefox, Edge, and Safari
+   - Keep your browser updated
+   - Enable JavaScript for full functionality
+
+5. **Security**
+   - Never share your password
+   - Always log out on shared computers
+   - Clear browser cache if using public computers
+
+---
+
+## Glossary
+
+**Archive** - Soft deletion of books, removing them from circulation while preserving records
+
+**Borrow Transaction** - Record of a book being checked out to a borrower
+
+**Clearance** - Official verification that a student/teacher has no library obligations
+
+**Due Date** - Date by which a borrowed book must be returned (14 days from borrow date)
+
+**ISBN** - International Standard Book Number, a unique identifier for books
+
+**Penalty** - Fine charged for late returns (₱10/day) or lost books (full price)
+
+**Reservation** - Online booking of an available book for future borrowing
+
+**Role** - User category (Student, Teacher, Librarian, Staff) with specific permissions
+
+**Waive** - Cancel a penalty without payment due to special circumstances
+
+---
+
+## Appendix:  Quick Reference Charts
+
+### Borrowing Limits
+
+| User Role | Borrowing Limit | Borrowing Period | Late Fee |
+|-----------|----------------|------------------|----------|
+| Student | 3 books | 14 days | ₱10/day |
+| Teacher | Unlimited | 14 days | ₱10/day |
+
+### Clearance Requirements
+
+| User Role | Requirements |
+|-----------|-------------|
+| Student | • All books returned<br>• All penalties paid<br>• Max 3 books per semester |
+| Teacher | • All books returned<br>• All penalties paid |
+
+### Penalty Types
+
+| Type | Amount | Who Can Waive |
+|------|--------|---------------|
+| Late Return | ₱10 per day overdue | Staff |
+| Lost Book | Full book price | Staff (with supervisor approval) |
+
+---
+
+**End of User Guide**
+
+---
+
+*This user guide is for MyLibrary System Version 1.0.0*  
+*Last Updated: December 2025*  
+*For the latest version, visit: https://github.com/Coding-Sean/Smart-Library-Web-System-for-Multi-User-Management*# 📚 MyLibrary System - Complete User Guide
+
+**Smart Library Web System for Multi-User Management**  
+Version 1.0.0
+
+---
+
+## 📑 Table of Contents
+
+1. [Introduction](#introduction)
+2. [Getting Started](#getting-started)
+3. [User Guide for Students](#user-guide-for-students)
+4. [User Guide for Teachers](#user-guide-for-teachers)
+5. [User Guide for Librarians](#user-guide-for-librarians)
+6. [User Guide for Staff](#user-guide-for-staff)
+7. [Frequently Asked Questions (FAQ)](#frequently-asked-questions-faq)
+8. [Support & Contact](#support--contact)
+
+---
+
+## Introduction
+
+### What is MyLibrary?
+
+MyLibrary is a comprehensive web-based library management system designed to help educational institutions manage their library operations efficiently. The system supports four different user roles: Students, Teachers, Librarians, and Staff members.
+
+### Who Can Use This System?
+
+- **Students** - Borrow books, make reservations, and check clearance status
+- **Teachers** - Borrow books without limits, make reservations
+- **Librarians** - Manage book inventory and catalog
+- **Staff** - Process transactions, manage borrowing/returns, handle penalties
+
+### System Access
+
+You can access the system by opening your web browser and navigating to: 
+```
+http://localhost/MyLibrary
+```
+Or the URL provided by your institution's IT department.
+
+---
+
+## Getting Started
+
+### 1. Creating Your Account
+
+#### Step-by-Step Registration: 
+
+1. **Navigate to the Sign-Up Page**
+   - Open your web browser
+   - Go to the MyLibrary website
+   - Click the **"Sign Up"** button on the login page
+
+2. **Fill in Your Information**
+   - **Full Name**: Enter your complete name
+   - **Email Address**:  Use your institutional email
+   - **Password**:  Create a secure password (minimum 6 characters)
+   - **Confirm Password**: Re-enter your password
+   - **Role**: Select your role (Student, Teacher, Librarian, or Staff)
+
+3. **Submit Registration**
+   - Click the **"Sign Up"** button
+   - Wait for confirmation message
+   - You'll be redirected to the login page
+
+#### Important Notes:
+- Use a valid email address you can access
+- Remember your password - there's no password recovery yet
+- Select the correct role (you cannot change this later)
+
+### 2. Logging Into the System
+
+1. **Go to Login Page**
+   - Navigate to the MyLibrary homepage
+   - You'll see the login screen
+
+2. **Enter Your Credentials**
+   - **Email**: Enter your registered email address
+   - **Password**:  Enter your password
+
+3. **Access Your Dashboard**
+   - Click the **"Login"** button
+   - You'll be redirected to your role-specific dashboard
+
+### 3. Logging Out
+
+To safely log out of the system:
+1. Look for the **"Logout"** button (usually in the top-right corner)
+2. Click **"Logout"**
+3. You'll be redirected to the login page
+4. Your session will be securely terminated
+
+---
+
+## User Guide for Students
+
+### Student Overview
+
+**Borrowing Limit**: 3 books per semester  
+**Borrowing Period**: 14 days  
+**Late Fee**: ₱10 per day overdue
+
+### Dashboard Features
+
+When you log in as a student, you'll see: 
+- **Book Catalog** - Browse available books
+- **My Borrowed Books** - View currently borrowed books
+- **Reservations** - Books you've reserved
+- **Penalties** - Any late fees or fines
+- **Clearance Status** - Your semester clearance status
+
+---
+
+### How to Browse and Search for Books
+
+#### Browsing the Catalog: 
+
+1. **View All Books**
+   - After logging in, you'll see the book catalog
+   - Books are displayed as cards with: 
+     - Book title
+     - Author name
+     - Category
+     - Available copies
+     - "Reserve" button
+
+2. **Search for Specific Books**
+   - Locate the **search bar** at the top of the catalog
+   - Type any of the following: 
+     - Book title (e.g., "Harry Potter")
+     - Author name (e.g., "J.K. Rowling")
+     - ISBN number
+     - Category (e.g., "Fiction")
+   - Results appear instantly as you type
+
+#### Understanding Book Status:
+
+- **Available** - Green indicator, books can be reserved
+- **Borrowed** - Red indicator, all copies are currently out
+- **Number of Copies** - Shows how many copies exist and how many are available
+
+---
+
+### How to Reserve a Book
+
+**Note**: You must reserve books online; staff will then process your borrowing. 
+
+#### Reservation Steps:
+
+1. **Find Your Book**
+   - Browse or search for the book you want
+   - Check that copies are available
+
+2. **Click Reserve**
+   - Click the **"Reserve"** button on the book card
+   - A confirmation dialog will appear
+
+3. **Confirm Reservation**
+   - Review the book details
+   - Click **"Confirm"** to submit your reservation
+
+4. **Wait for Approval**
+   - Your reservation status will show as **"Pending"**
+   - Staff will review and approve your reservation
+   - Once approved, visit the library to collect the book
+
+#### Reservation Rules: 
+
+- ✅ You can only reserve books that are available
+- ✅ Maximum 3 books at a time (total borrowed + reserved)
+- ❌ Cannot reserve if you have unpaid penalties
+- ❌ Cannot reserve if you've reached your borrowing limit
+
+---
+
+### Viewing Your Borrowed Books
+
+1. **Access Borrowed Books Section**
+   - Look for **"My Borrowed Books"** tab or section
+   - This shows all books you currently have
+
+2. **Information Displayed**
+   - **Book Title** and Author
+   - **Borrow Date** - When you checked out the book
+   - **Due Date** - When the book must be returned (14 days from borrow date)
+   - **Days Remaining** - How many days until due date
+   - **Status** - "On Time" or "Overdue"
+
+3. **Understanding Due Dates**
+   - All books must be returned within **14 days**
+   - **Green** date = Still on time
+   - **Red** date = Overdue (penalties apply)
+
+---
+
+### Managing Penalties
+
+#### Viewing Your Penalties:
+
+1. **Access Penalties Section**
+   - Click on **"Penalties"** or **"Fines"** tab
+   - View all penalties associated with your account
+
+2. **Penalty Information**
+   - **Type**:  Late Return or Lost Book
+   - **Amount**: Total amount owed
+   - **Issue Date**: When the penalty was issued
+   - **Status**:  Unpaid, Paid, or Waived
+   - **Related Book**: Which book caused the penalty
+
+#### Types of Penalties:
+
+| Penalty Type | Calculation | Payment |
+|-------------|-------------|---------|
+| **Late Return** | ₱10 per day overdue | Pay at library counter |
+| **Lost Book** | Full book price | Pay at library counter |
+
+#### How to Pay Penalties:
+
+1. Note down your penalty amount and details
+2. Visit the library staff counter
+3. Inform staff you want to pay penalties
+4. Make payment (cash or as instructed)
+5. Staff will mark your penalty as "Paid" in the system
+
+#### Important: 
+- ❌ You **cannot borrow or reserve** books with unpaid penalties
+- ❌ You **cannot get clearance** with unpaid penalties
+- ✅ Staff can **waive** penalties in special circumstances
+
+---
+
+### Semester Clearance
+
+#### What is Clearance?
+
+Clearance is a verification process at the end of each semester to ensure you have: 
+- Returned all borrowed books
+- Paid all penalties and fines
+- Met all borrowing requirements
+
+#### How to Check Clearance Status:
+
+1. **Access Clearance Section**
+   - Look for **"Clearance"** or **"Semester Clearance"** tab
+
+2. **View Your Status**
+   - **Cleared** (Green) - You're good to go! 
+   - **Not Cleared** (Red) - You have pending requirements
+
+3. **Requirements for Clearance**
+   - ✅ All borrowed books returned
+   - ✅ All penalties paid in full
+   - ✅ No outstanding reservations
+
+#### Getting Cleared:
+
+1. Return all borrowed books to the library
+2. Pay any outstanding penalties
+3. Visit library staff to process your clearance
+4. Staff will update your clearance status
+5. You'll receive clearance confirmation
+
+---
+
+## User Guide for Teachers
+
+### Teacher Overview
+
+**Borrowing Limit**:  Unlimited books  
+**Borrowing Period**: 14 days  
+**Late Fee**:  ₱10 per day overdue  
+**Semester Requirement**: Must return all books at semester end
+
+### Dashboard Features
+
+As a teacher, your dashboard includes:
+- **Book Catalog** - Full library inventory
+- **My Borrowed Books** - All your borrowed materials
+- **Reservations** - Books you've reserved
+- **Penalties** - Any late fees
+- **Clearance Status** - End-of-semester clearance
+
+---
+
+### How to Reserve Books (Teachers)
+
+The process is identical to students, with these differences:
+
+#### Advantages: 
+- ✅ **No borrowing limit** - Reserve as many books as needed
+- ✅ **Priority processing** - Faster approval for academic needs
+- ✅ **Extended privileges** - Longer borrowing for research
+
+#### Steps:
+
+1. **Search for Books**
+   - Use the search bar to find books by title, author, or subject
+   - Browse categories relevant to your teaching
+
+2. **Make Reservations**
+   - Click **"Reserve"** on available books
+   - Add notes if needed for special requests
+
+3. **Visit Library**
+   - Once approved, collect books from library staff
+   - Staff may accommodate bulk borrowing for classroom use
+
+---
+
+### Managing Your Borrowed Books
+
+#### Viewing Borrowed Materials:
+
+1. **Access Your Books**
+   - Navigate to **"My Borrowed Books"**
+   - See complete list with due dates
+
+2. **Track Due Dates**
+   - **Due Date** is 14 days from borrow date
+   - Renew if needed (contact staff)
+   - Return on time to avoid penalties
+
+#### Tips for Teachers: 
+- 📌 Set calendar reminders for due dates
+- 📌 Contact staff for extensions if needed for curriculum
+- 📌 Return books promptly for other faculty to access
+
+---
+
+### Penalties and Payments
+
+#### Late Return Penalties:
+- **₱10 per day** for each overdue book
+- Calculated automatically upon return
+- Must be paid before semester clearance
+
+#### How to Manage: 
+1. Check penalties in **"Penalties"** section
+2. Pay at library counter
+3. Request waiver from staff if special circumstances apply
+
+---
+
+### End-of-Semester Clearance
+
+#### Teacher Clearance Requirements: 
+
+Teachers **must** obtain clearance before the semester ends:
+
+1. **Return All Books**
+   - No exceptions - all borrowed materials must be returned
+   - This includes books borrowed for classroom use
+
+2. **Pay All Penalties**
+   - Clear all late fees
+   - Settle any lost book charges
+
+3. **Process Clearance**
+   - Visit library staff
+   - Staff will verify your account
+   - Receive clearance confirmation
+
+**Important**: Failure to get clearance may affect academic records. 
+
+---
+
+## User Guide for Librarians
+
+### Librarian Overview
+
+**Primary Responsibility**: Book Inventory Management  
+**Main Functions**: Add, Edit, Update, and Archive books in the system
+
+### Dashboard Overview
+
+Your librarian dashboard provides:
+- **Book Catalog** - Full inventory view
+- **Add Book** - Add new books to inventory
+- **Edit Books** - Update book information
+- **Search & Filter** - Find specific books quickly
+- **Archive** - Soft delete books no longer available
+
+---
+
+### Managing the Book Catalog
+
+#### Viewing All Books:
+
+1. **Access Catalog**
+   - Your dashboard displays all books in the system
+   - Books shown as cards with full details
+
+2. **Book Information Displayed**
+   - Title
+   - Author
+   - ISBN
+   - Category
+   - Number of Copies
+   - Price
+   - Status (Available/Borrowed/Archived)
+
+3. **Search and Filter**
+   - Use search bar to find specific books
+   - Search by:  Title, Author, ISBN, or Category
+   - Results update in real-time
+
+---
+
+### Adding New Books
+
+#### Step-by-Step Process:
+
+1. **Click "Add Book" Button**
+   - Located prominently on your dashboard
+   - Opens the Add Book form
+
+2. **Fill in Book Details**
+
+   **Required Fields:**
+   - **Book Title** - Full title of the book
+   - **Author** - Author's full name
+   - **ISBN** - International Standard Book Number
+   - **Category** - Select from dropdown (Fiction, Non-Fiction, Reference, etc.)
+   - **Number of Copies** - How many copies to add
+   - **Price** - Book price in Philippine Pesos (₱)
+
+3. **Review Information**
+   - Double-check all entered data
+   - Ensure ISBN is correct
+   - Verify copy count
+
+4. **Submit**
+   - Click **"Add Book"** button
+   - Wait for confirmation message
+   - Book will appear in catalog immediately
+
+#### Tips for Adding Books: 
+- 📖 Use the exact ISBN from the book
+- 📖 Be consistent with author name formatting
+- 📖 Choose the most appropriate category
+- 📖 Add multiple copies in one entry if they're identical
+
+---
+
+### Editing Existing Books
+
+#### When to Edit: 
+- Update incorrect information
+- Change number of available copies
+- Update pricing
+- Correct title or author spelling
+
+#### How to Edit: 
+
+1. **Find the Book**
+   - Use search to locate the book
+   - Or browse through the catalog
+
+2. **Click "Edit" Button**
+   - Found on each book card
+   - Opens Edit Book form with current data pre-filled
+
+3. **Modify Information**
+   - Change any field that needs updating
+   - **Editable fields:**
+     - Title
+     - Author
+     - ISBN
+     - Category
+     - Number of Copies
+     - Price
+
+4. **Save Changes**
+   - Click **"Update Book"** or **"Save"**
+   - Confirm the update
+   - Changes take effect immediately
+
+#### Important Notes:
+- ⚠️ Be careful when changing ISBNs
+- ⚠️ Changing copy count affects availability
+- ⚠️ Price changes don't affect existing penalties
+
+---
+
+### Archiving Books
+
+#### What is Archiving?
+
+Archiving is a "soft delete" that removes books from active circulation without permanently deleting them from the database.
+
+#### When to Archive:
+- Books are damaged beyond use
+- Books are lost and won't be replaced
+- Outdated editions being phased out
+- Books no longer relevant to curriculum
+
+#### How to Archive:
+
+1. **Locate the Book**
+   - Search for the book to archive
+
+2. **Click "Archive" Button**
+   - Found on the book card or edit form
+   - Confirmation dialog appears
+
+3. **Confirm Archival**
+   - Review the book details
+   - Click **"Confirm Archive"**
+
+4. **Result**
+   - Book removed from active catalog
+   - Book no longer available for borrowing or reservation
+   - Data preserved in database for records
+
+#### Viewing Archived Books: 
+- Look for "View Archived" filter or tab
+- Archived books can be restored if needed (contact system admin)
+
+---
+
+### Search and Filter Features
+
+#### Search Functionality:
+
+1. **Basic Search**
+   - Enter keywords in search bar
+   - Searches across:  Title, Author, ISBN, Category
+   - Results appear instantly
+
+2. **Advanced Filtering**
+   - Filter by category
+   - Filter by availability status
+   - Sort by title, author, or date added
+
+#### Tips for Efficient Management:
+- 🔍 Use ISBN search for exact matches
+- 🔍 Regularly review inventory for accuracy
+- 🔍 Keep categories consistent
+- 🔍 Update copy counts when books are damaged
+
+---
+
+## User Guide for Staff
+
+### Staff Overview
+
+**Primary Responsibility**: Transaction Management  
+**Main Functions**:
+- Process book borrowing
+- Process book returns
+- Manage penalties
+- Approve reservations
+- Process clearances
+
+### Dashboard Overview
+
+Your staff dashboard includes:
+- **Borrower Management** - Search and manage borrowers
+- **Borrow Books** - Process new borrowing transactions
+- **Return Books** - Process returns and calculate penalties
+- **Reservations** - Approve/reject pending reservations
+- **Penalties** - View, add, and manage penalties
+- **Clearance** - Process semester clearances
+
+---
+
+### Processing Book Borrowing
+
+#### Step-by-Step Borrowing Process:
+
+1. **Search for Borrower**
+   - Student or teacher approaches with ID
+   - Use search bar to find borrower by name or email
+   - Click on the borrower's profile
+
+2. **Check Eligibility**
+   - System automatically checks: 
+     - ✅ Student hasn't exceeded 3-book limit
+     - ✅ No unpaid penalties
+     - ✅ Valid account status
+
+3. **Select Books to Borrow**
+   - Click **"Borrow Book"** button
+   - Search for the book by title, author, or ISBN
+   - Select the book from results
+
+4. **Confirm Transaction**
+   - Review borrower details
+   - Review book details
+   - **Borrow Date**:  Auto-filled with today's date
+   - **Due Date**: Auto-calculated (14 days from today)
+   - Click **"Confirm Borrow"**
+
+5. **Complete Process**
+   - System records the transaction
+   - Book copy count decreases
+   - Borrower's active loans increase
+   - Print/show confirmation to borrower
+
+#### Important Checks:
+- ⚠️ Students:  Maximum 3 books
+- ⚠️ Teachers:  Unlimited
+- ⚠️ Must have no unpaid penalties
+- ⚠️ Book must have available copies
+
+---
+
+### Processing Book Returns
+
+#### Return Process:
+
+1. **Find Borrower**
+   - Borrower returns with book(s)
+   - Search for borrower in system
+   - View their borrowed books
+
+2. **Select Book to Return**
+   - Click **"Return"** button next to the book
+   - Or select from list of borrowed books
+
+3. **Automatic Penalty Calculation**
+   - System compares today's date with due date
+   - **If on time**: No penalty, smooth return
+   - **If overdue**: System calculates penalty automatically
+     ```
+     Days Late = Today - Due Date
+     Penalty = Days Late × ₱10
+     ```
+
+4. **Process Return**
+   - Review penalty amount (if any)
+   - Click **"Confirm Return"**
+   - Book status changes to "Returned"
+   - Copy count increases
+
+5. **Handle Penalty**
+   - If penalty exists:
+     - Inform borrower of amount
+     - Collect payment
+     - Mark penalty as "Paid" (see Penalty Management section)
+
+---
+
+### Managing Reservations
+
+#### Viewing Pending Reservations:
+
+1. **Access Reservations Section**
+   - Click **"Reservations"** tab
+   - See list of all pending reservations
+
+2. **Reservation Details**
+   - Student/Teacher name
+   - Book title
+   - Reservation date
+   - Status (Pending/Approved/Rejected)
+
+#### Approving Reservations: 
+
+1. **Review Reservation**
+   - Check if book is available
+   - Verify borrower eligibility
+
+2. **Approve**
+   - Click **"Approve"** button
+   - Reservation status changes to "Approved"
+   - Book is marked as reserved for that borrower
+
+3. **Process Borrowing**
+   - When borrower arrives to collect
+   - Follow normal borrowing process
+   - Reference the approved reservation
+
+#### Rejecting Reservations:
+
+1. **Select Reservation**
+2. **Click "Reject"**
+3. **Provide Reason** (optional but recommended)
+4. **Confirm Rejection**
+   - Borrower should be notified
+   - Reservation status updated
+
+#### Common Rejection Reasons:
+- Book no longer available
+- Borrower has unpaid penalties
+- Borrower exceeded borrowing limit
+- Book under maintenance/repair
+
+---
+
+### Penalty Management
+
+#### Viewing All Penalties:
+
+1. **Access Penalties Section**
+   - View all penalties in the system
+   - Filter by:  Paid, Unpaid, Waived
+   - Search by borrower name
+
+#### Adding Manual Penalties:
+
+Sometimes you need to add penalties manually (e.g., lost books):
+
+1. **Find Borrower**
+   - Search for the borrower
+
+2. **Click "Add Penalty"**
+   - Opens penalty form
+
+3. **Enter Penalty Details**
+   - **Type**: Late Return or Lost Book
+   - **Amount**: 
+     - Late:  ₱10 × days late
+     - Lost: Full book price
+   - **Reason**: Brief description
+   - **Related Borrow Transaction**: Select the transaction
+
+4. **Submit**
+   - Penalty added to borrower's account
+   - Borrower cannot borrow until paid
+
+#### Marking Penalties as Paid:
+
+1. **Locate Penalty**
+   - Find the specific penalty
+
+2. **Collect Payment**
+   - Accept payment from borrower
+   - Count cash carefully
+
+3. **Update Status**
+   - Click **"Mark as Paid"**
+   - Enter payment date
+   - Add receipt number if applicable
+
+4. **Confirm**
+   - Status changes to "Paid"
+   - Borrower can now borrow again
+
+#### Waiving Penalties:
+
+In special circumstances, staff can waive penalties:
+
+1. **Select Penalty**
+2. **Click "Waive Penalty"**
+3. **Enter Reason** (required)
+   - Example reasons:
+     - Book found after payment
+     - System error
+     - Administrative decision
+     - Special circumstances approved by supervisor
+4. **Confirm Waiver**
+   - Status changes to "Waived"
+   - No payment required
+
+---
+
+### Processing Clearances
+
+#### What is Clearance Processing?
+
+At the end of each semester, students and teachers must obtain clearance from the library before completing their semester requirements.
+
+#### Clearance Requirements:
+
+**For Students:**
+- All borrowed books returned
+- All penalties paid
+- Maximum 3 books per semester rule followed
+
+**For Teachers:**
+- All borrowed books returned
+- All penalties paid
+
+#### How to Process Clearance:
+
+1. **Student/Teacher Requests Clearance**
+   - They approach library counter
+   - Request clearance processing
+
+2. **Access Clearance Section**
+   - Click **"Clearance"** or **"Process Clearance"**
+   - Search for the person's name
+
+3. **Verify Requirements**
+   - System shows: 
+     - ✅ or ❌ All books returned
+     - ✅ or ❌ All penalties paid
+     - Borrowing history
+
+4. **Grant or Deny Clearance**
+
+   **If All Requirements Met:**
+   - Click **"Grant Clearance"**
+   - Enter semester (e.g., "1st Semester 2025-2026")
+   - Click **"Confirm"**
+   - Clearance status updated to "Cleared"
+   - Print or provide confirmation
+
+   **If Requirements Not Met:**
+   - Inform them of pending requirements
+   - Show what needs to be completed
+   - Guide them to return books or pay penalties
+   - Process clearance once completed
+
+5. **Record Keeping**
+   - All clearances are recorded with date and semester
+   - Viewable in clearance history
+
+---
+
+### Borrower Search and Management
+
+#### Finding Borrowers:
+
+1. **Use Search Bar**
+   - Enter name, email, or ID
+   - Results appear instantly
+
+2. **View Borrower Profile**
+   - Click on borrower name
+   - See complete information: 
+     - Name and email
+     - Role (Student/Teacher)
+     - Currently borrowed books
+     - Borrowing history
+     - Penalties
+     - Clearance status
+
+#### Managing Borrower Accounts: 
+
+As staff, you can: 
+- View complete borrowing history
+- See all transactions
+- Check penalty status
+- Verify clearance status
+- Process all transactions for that borrower
+
+---
+
+### Tips for Efficient Staff Operations
+
+#### Best Practices:
+
+1. **Daily Opening Procedures**
+   - Check for overdue books
+   - Review pending reservations
+   - Note any unpaid penalties
+
+2. **During Transactions**
+   - Always verify borrower identity
+   - Double-check book condition
+   - Inform borrowers of due dates
+   - Explain penalty policies clearly
+
+3. **End of Day**
+   - Review transactions processed
+   - Ensure all payments recorded
+   - Clear pending reservations
+
+4. **Communication**
+   - Be polite and helpful
+   - Explain system processes clearly
+   - Guide users through their first transactions
+   - Provide due date reminders
+
+---
+
+## Frequently Asked Questions (FAQ)
+
+### General Questions
+
+**Q: I forgot my password. How do I reset it?**  
+A: Currently, the system doesn't have automated password reset.  Please contact the library staff or system administrator to reset your password manually.
+
+**Q: Can I change my role after registration?**  
+A: No, roles are permanent after registration. If you registered with the wrong role, contact the system administrator.
+
+**Q: Why can't I access the system?**  
+A:  Ensure you're using the correct email and password. Check that Apache and MySQL are running if you're accessing locally.  Clear your browser cache and try again.
+
+---
+
+### Student Questions
+
+**Q: Why can't I reserve more books? **  
+A: Students are limited to 3 books total (borrowed + reserved). Return books or wait for reservations to be processed to free up your limit.
+
+**Q: How long does it take for my reservation to be approved?**  
+A: Typically, staff process reservations within 24 hours. Check your reservation status in your dashboard.
+
+**Q: What happens if I return a book late?**  
+A: You'll be charged ₱10 per day for each day the book is overdue. This penalty must be paid before you can borrow again.
+
+**Q: I lost my borrowed book. What should I do?**  
+A:  Report it to library staff immediately. You'll be charged the full price of the book as a replacement fee.
+
+**Q: Can I renew my borrowed books?**  
+A: Contact library staff to request renewal. They will extend your due date if the book is not reserved by others.
+
+**Q: Why is my clearance status "Not Cleared"?**  
+A: Check if you have unreturned books or unpaid penalties. Clear these requirements, then request clearance from staff.
+
+---
+
+### Teacher Questions
+
+**Q: Is there a limit to how many books I can borrow? **  
+A: No, teachers have unlimited borrowing privileges. 
+
+**Q: Can I borrow books for my entire class?**  
+A: Yes, but each book must be registered under your name.  Discuss bulk borrowing with library staff.
+
+**Q: Do I need clearance every semester?**  
+A: Yes, all faculty must obtain library clearance at the end of each semester before completing semester requirements.
+
+**Q: What if I need a book for longer than 14 days?**  
+A:  Contact library staff to request an extension or renewal. 
+
+---
+
+### Librarian Questions
+
+**Q: Can I delete a book permanently?**  
+A: No, the system uses "archiving" (soft delete) to preserve records.  Archived books can be restored by administrators if needed.
+
+**Q: What if I made a mistake when adding a book?**  
+A: Use the "Edit" function to correct any information. All fields can be updated after initial entry.
+
+**Q: How do I add multiple copies of the same book?**  
+A:  In the "Number of Copies" field, enter the total number of identical copies.  Don't create separate entries for each copy.
+
+**Q: Can I see which books are most borrowed?**  
+A: Currently, this requires database access. Contact the system administrator for borrowing statistics.
+
+---
+
+### Staff Questions
+
+**Q: What if a student wants to borrow but has unpaid penalties?**  
+A:  The system will prevent borrowing.  The student must pay penalties first before borrowing.
+
+**Q:  How do I handle partial penalty payments?**  
+A: Currently, the system tracks full payment only. For partial payments, make a note and collect the balance before marking as paid.
+
+**Q: Can I approve a reservation for a book that's currently borrowed?**  
+A: Yes, you can approve it.  The system will mark it for when the book becomes available.
+
+**Q: What if the penalty calculation seems wrong?**  
+A: The system calculates ₱10 per day.  Verify the due date and return date.  If there's a system error, contact the administrator.  You can also waive incorrect penalties.
+
+**Q: How do I print clearance certificates?**  
+A: Currently, use your browser's print function (Ctrl+P) when viewing the clearance confirmation screen.
+
+---
+
+## Support & Contact
+
+### Getting Help
+
+If you encounter issues or have questions not covered in this guide:
+
+#### Technical Support
+- **System Administrator**: Contact your institution's IT department
+- **Developer**: Jansean Libera
+- **Email**: liberajansean34@gmail.com
+- **GitHub**: [Coding-Sean/Smart-Library-Web-System-for-Multi-User-Management](https://github.com/Coding-Sean/Smart-Library-Web-System-for-Multi-User-Management)
+
+#### Library Staff
+- Visit the library counter during operating hours
+- Library staff can assist with:
+  - Account issues
+  - Transaction problems
+  - Penalty questions
+  - Clearance processing
+
+### Reporting Bugs
+
+If you find a bug or error in the system:
+
+1. **Document the Issue**
+   - What were you trying to do?
+   - What happened instead?
+   - Any error messages shown?
+
+2. **Report via GitHub**
+   - Go to the repository's Issues page
+   - Click "New Issue"
+   - Describe the problem clearly
+   - Include screenshots if possible
+
+3. **Or Contact Developer**
+   - Email: liberajansean34@gmail.com
+   - Include detailed description and screenshots
+
+---
+
+## System Tips and Tricks
+
+### For All Users
+
+1. **Bookmark the System**
+   - Add MyLibrary to your browser bookmarks for quick access
+
+2. **Keep Track of Due Dates**
+   - Set calendar reminders 2-3 days before books are due
+   - Check your dashboard regularly
+
+3. **Use Search Effectively**
+   - Search by ISBN for exact matches
+   - Use partial titles if you don't know the full name
+   - Try author's last name for better results
+
+4. **Browser Compatibility**
+   - Works best on Chrome, Firefox, Edge, and Safari
+   - Keep your browser updated
+   - Enable JavaScript for full functionality
+
+5. **Security**
+   - Never share your password
+   - Always log out on shared computers
+   - Clear browser cache if using public computers
+
+---
+
+## Glossary
+
+**Archive** - Soft deletion of books, removing them from circulation while preserving records
+
+**Borrow Transaction** - Record of a book being checked out to a borrower
+
+**Clearance** - Official verification that a student/teacher has no library obligations
+
+**Due Date** - Date by which a borrowed book must be returned (14 days from borrow date)
+
+**ISBN** - International Standard Book Number, a unique identifier for books
+
+**Penalty** - Fine charged for late returns (₱10/day) or lost books (full price)
+
+**Reservation** - Online booking of an available book for future borrowing
+
+**Role** - User category (Student, Teacher, Librarian, Staff) with specific permissions
+
+**Waive** - Cancel a penalty without payment due to special circumstances
+
+---
+
+## Appendix:  Quick Reference Charts
+
+### Borrowing Limits
+
+| User Role | Borrowing Limit | Borrowing Period | Late Fee |
+|-----------|----------------|------------------|----------|
+| Student | 3 books | 14 days | ₱10/day |
+| Teacher | Unlimited | 14 days | ₱10/day |
+
+### Clearance Requirements
+
+| User Role | Requirements |
+|-----------|-------------|
+| Student | • All books returned<br>• All penalties paid<br>• Max 3 books per semester |
+| Teacher | • All books returned<br>• All penalties paid |
+
+### Penalty Types
+
+| Type | Amount | Who Can Waive |
+|------|--------|---------------|
+| Late Return | ₱10 per day overdue | Staff |
+| Lost Book | Full book price | Staff (with supervisor approval) |
+
+---
+
+**End of User Guide**
+
+---
+
+*This user guide is for MyLibrary System Version 1.0.0*  
+*Last Updated: December 2025*  
+*For the latest version, visit: https://github.com/Coding-Sean/Smart-Library-Web-System-for-Multi-User-Management*
